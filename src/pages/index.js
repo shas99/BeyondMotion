@@ -6,7 +6,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+// import profilePic from "../../public/images/profile/developer-pic-1.png";
+import profilePic from "../../public/images/profile/developer-pic-1.jpg"
 import TransitionEffect from "@/components/TransitionEffect";
 
 
@@ -40,20 +41,26 @@ export default function Home() {
               />
             </div>
             <div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
+              {/* <AnimatedText
+                text="hey mate!"
+                className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
+              /> */}
               <AnimatedText
                 text="Making ordinary ideas into extraordinary."
                 className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
-              <p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
+              <p> At Hey.Mate, we bring your everyday ideas to life - tranforming them into extraordinary visuals that speak louder than words. </p>
+              {/* <p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
               I am specialize in video editing and design. I craft content that captures attention and drives results. From cinematic edits to scroll-stopping social media posts, I help brands and creators stand out.
-              </p>
+              </p> */}
               <div className="mt-2 flex items-center self-start lg:self-center">
                 <Link
                   // whileHover={{
                   //   cursor: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='font-size:24px;'><text y='50%'>👆</text></svg>"), auto`,
                   // }}
-                  href="/dummy.pdf"
-                  target={"_blank"}
+                  // href="/dummy.pdf"
+                  // target={"_blank"}
+                  href="mailto:heymatte.studio@gmail.com"
                   className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
             dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
@@ -61,16 +68,16 @@ export default function Home() {
              `}
                   download
                 >
-                  Resume <LinkArrow className="ml-1 !w-6 md:!w-4" />
+                  Contact <LinkArrow className="ml-1 !w-6 md:!w-4" />
                 </Link>
 
-                <Link
-                  href="mailto:codebucks27@gmail.com"
+                {/* <Link
+                  href="mailto:heymatte.studio@gmail.com"
                   className="ml-4 text-lg font-medium capitalize text-dark underline 
                   dark:text-light md:text-base"
                 >
                   Contact
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
