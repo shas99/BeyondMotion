@@ -86,7 +86,7 @@ My mission is simple: to take the ordinary and make it extraordinary.
               </p> */}
             </div>
             <div className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark 
-            bg-light p-8 dark:border-light dark:bg-dark
+            bg-light p-2 dark:border-light dark:bg-dark
             xl:col-span-4 md:col-span-8 md:order-1
             ">
               <div
