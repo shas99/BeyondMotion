@@ -15,6 +15,12 @@ module.exports = {
       fontFamily: {
         mont: ["var(--font-mont)", ...fontFamily.sans],
       },
+      fontSize: {
+        // Define your new custom sizes
+        '10xl': '10rem', // Example: 160px
+        '11xl': '12rem', // Example: 192px
+        // You can use any value here (px, rem, vw, etc.)
+      },
       colors: {
         dark: "#1b1b1b",
         light: "#f5f5f5",
@@ -50,6 +56,24 @@ module.exports = {
         "3xl": "0 15px 15px 1px rgba(80,230,217, 0.4)",
       },
     },
+    keyframes: {
+        // Define the fade-in animation
+        fadeIn: {
+          '0%': { 
+            opacity: '0', 
+            transform: 'translateY(20px)' 
+          },
+          '100%': { 
+            opacity: '1', 
+            transform: 'translateY(0)' 
+          },
+        },
+      },
+      animation: {
+        // Define the utility class for the animation
+        // Use 'forwards' to ensure the final state remains after the animation completes
+        fadeIn: 'fadeIn 0.6s ease-out forwards', 
+      },
     screens: {
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }

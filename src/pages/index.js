@@ -1,92 +1,107 @@
 "use client";
-import AnimatedText from "@/components/AnimatedText";
+
+import Head from "next/head";
+import Link from "next/link";
+import CssTextFadeIn from "@/components/CssTextFadeIn";
 import { HireMe } from "@/components/HireMe";
 import { LinkArrow } from "@/components/Icons";
-import Layout from "@/components/Layout";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
-import profilePic from "../../public/images/profile/developer-pic-1.jpg";
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Awesome Portfolio Built with Nextjs</title>
-        <meta name="description" content="Explore CodeBucks's Next.js developer portfolio..." />
+        <meta
+          name="description"
+          content="Explore CodeBucks's Next.js developer portfolio..."
+        />
       </Head>
 
-      <article className="flex min-h-screen items-center text-dark dark:text-light sm:items-start">
-        <Layout className="!pt-0 md:!pt-16 sm:!pt-16">
-          
-          <div className="flex w-full items-center justify-between lg:flex-col gap-8">
-            
-            {/* LEFT SIDE: CSS Animated "HEY MATE" */}
-            <div className="w-1/2 md:w-full lg:w-full flex justify-center overflow-hidden">
-              
-              {/* Apply the CSS class 'crash-in' here */}
-              <span className="crash-in inline-block font-black text-9xl md:text-8xl sm:text-6xl text-transparent bg-clip-text bg-gradient-to-br from-dark to-gray-500 dark:from-light dark:to-gray-400">
-                HEY MATE
-              </span>
-
-            </div>
-
-            {/* RIGHT SIDE: Text Content */}
-            <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
-              <AnimatedText
-                text="Making ordinary ideas into extraordinary."
-                className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
-              />
-              <p className="my-4 text-base font-medium md:text-sm sm:text-xs lg:text-center">
-                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
-                Explore my latest projects and articles, showcasing my expertise in React.js and web development.
-              </p>
-              <div className="mt-2 flex items-center self-start lg:self-center">
-                <Link
-                  href="mailto:heymatte.studio@gmail.com"
-                  className="flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
-                    capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
-                    dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
-                    md:p-2 md:px-4 md:text-base"
-                >
-                  Contact <LinkArrow className="ml-1 !w-6 md:!w-4" />
-                </Link>
-              </div>
-            </div>
-
-          </div>
-        </Layout>
-
-        <HireMe />
-        
-        <div className="absolute right-8 bottom-8 inline-block w-24 md:hidden">
-          <Image
-            className="relative h-auto w-full"
-            src={lightBulb}
-            alt="Codebucks"
+      <article className="flex min-h-screen w-full text-dark dark:text-light">
+        <div
+          className="
+            mx-auto
+            flex
+            w-full
+            max-w-7xl
+            flex-col
+            items-center
+            justify-center
+            gap-6
+            px-4
+            sm:px-6
+            lg:px-8
+            sm:items-start
+            sm:justify-start
+            sm:pt-24
+          "
+        >
+          {/* BIG TITLE */}
+          <CssTextFadeIn
+            text="hey mate."
+            className="font-bold leading-tight"
+            style={{
+              fontSize: "clamp(2.5rem, 8vw, 8rem)",
+            }}
           />
+          <CssTextFadeIn
+            text="Making ordinary ideas into extraordinary."
+            className="
+              leading-snug
+              font-medium
+              opacity-75
+              max-w-full
+              sm:max-w-3xl
+              text-center
+            "
+            style={{
+              fontSize: "clamp(0.9rem, 3vw, 2rem)"
+            }}
+          />
+
+          <div className="mt-4 flex items-center">
+            <Link
+              href="mailto:heymatte.studio@gmail.com"
+              className="
+                flex items-center
+                rounded-lg
+                border-2 border-solid
+                bg-dark
+                px-5 py-2
+                text-base font-semibold
+                capitalize
+                text-light
+                transition-all
+                hover:border-dark hover:bg-transparent hover:text-dark
+                dark:bg-light dark:text-dark
+                dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
+                sm:px-6 sm:text-lg
+              "
+            >
+              Contact
+              <LinkArrow className="ml-2 w-5 sm:w-6" />
+            </Link>
+          </div>
+
+          <HireMe />
         </div>
       </article>
 
-      {/* --- CSS STYLES --- */}
       <style jsx>{`
-        /* 1. Define the Crash Animation */
         @keyframes crashEffect {
           0% {
             opacity: 0;
-            transform: scale(10); /* Start Huge */
+            transform: scale(8);
           }
           100% {
             opacity: 1;
-            transform: scale(1); /* End Normal */
+            transform: scale(1);
           }
         }
 
-        /* 2. Create the class */
         .crash-in {
-          /* Using a cubic-bezier to mimic a "Spring" bounce */
-          animation: crashEffect 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+          animation: crashEffect 0.8s
+            cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         }
       `}</style>
     </>

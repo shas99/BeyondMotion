@@ -64,14 +64,14 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
           {summary}
         </p>
         <div className="mt-2 flex items-center">
-          <Link
+          {/* <Link
             href={github}
             target={"_blank"}
             className="w-10"
             aria-label="Crypto Screener Application github link"
           >
             <GithubIcon />
-          </Link>
+          </Link> */}
           <Link
             href={link}
             target={"_blank"}
@@ -145,14 +145,14 @@ const Project = ({ title, type, img, link, github }) => {
           >
             Visit
           </Link>
-          <Link
+          {/* <Link
             href={github}
             target={"_blank"}
             className="w-8 md:w-6"
             aria-label={title}
           >
             <GithubIcon />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </article>
@@ -187,7 +187,7 @@ export default function Projects() {
                 title="Crypto Screener Application"
                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
                 img={proj1}
-                link="https://devdreaming.com/videos/build-crypto-screener-app-with-react-tailwind-css"
+                link="https://drive.google.com/drive/folders/1_52IEeMV-ABB_KG2ZH1Z74gbYe0tzjcu"
                 github="https://github.com/codebucks27/CryptoBucks-Final-Code"
               />
             </div>
@@ -196,7 +196,7 @@ export default function Projects() {
                 type="Website Template"
                 title="NFT collection Website"
                 img={proj2}
-                link="https://devdreaming.com/videos/create-nft-collection-website-reactjs"
+                link="https://drive.google.com/drive/folders/1IWrs0iI5pHv6n7p49KCgRul4CntJOKA7?usp=drive_link"
                 github="https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code"
               />
             </div>
@@ -205,7 +205,7 @@ export default function Projects() {
                 type="Website"
                 title="Fashion Studio Website"
                 img={proj3}
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
+                link="https://drive.google.com/drive/folders/1Pgp8FeG9cULESpoWAd5YKKzCtfPg-BmN?usp=drive_link"
                 github="https://github.com/codebucks27/wibe-studio"
               />
             </div>
@@ -215,7 +215,7 @@ export default function Projects() {
                 title="React Portfolio Website"
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
                 img={proj4}
-                link="https://devdreaming.com/videos/build-stunning-portfolio-website-react-js-framer-motion"
+                link="https://drive.google.com/drive/folders/1ayKHNzARGEkrhFsqT5O8Nst9u4PfXPxu?usp=drive_link"
                 github="https://github.com/codebucks27/react-portfolio-final"
               />
             </div>
@@ -224,7 +224,7 @@ export default function Projects() {
                 type="Website Template"
                 img={proj5}
                 title="Agency Website Template"
-                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
+                link="https://drive.google.com/drive/folders/1iGWB5pKh4jqmaHnLuSe6RrJmzVDggvJV?usp=drive_link"
                 github="https://github.com/codebucks27/wibe-studio"
               />
             </div>
@@ -233,8 +233,8 @@ export default function Projects() {
                 type="Blog Website"
                 img={proj6}
                 title="DevDreaming"
-                link="https://devdreaming.com"
-                github="https://github.com/codebucks27"
+                link="https://drive.google.com/drive/folders/1csf8hgvhR9NCQelhEccctTWOxsQQtnS-?usp=drive_link"
+                github="https://drive.google.com/drive/folders/1csf8hgvhR9NCQelhEccctTWOxsQQtnS-?usp=drive_link"
               />
             </div>
           </div>
