@@ -102,7 +102,7 @@ const Navbar = () => {
         <motion.a
           target={"_blank"}
           className="w-6 mr-3"
-          href="https://www.instagram.com/_hey.mate._/?igsh=MXZzejB2a25ycjNncw%3D%3D#"
+          href="https://www.instagram.com/heymate.__?igsh=MXZzejB2a25ycjNncw=="
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           aria-label="Checkout my twitter profile"
